@@ -1,153 +1,113 @@
 {
     "categorias": [
       {
-        "titulo": "Front End",
-        "link": "https://www.alura.com.br/formacao-front-end",
-        "cor": "#6BD1FF",
+        "titulo": "Animes",
+        "link": "",
+        "cor": "#FE2E2E",
         "link_extra": {
-          "text": "Formação de Front End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-front-end"
+          "text": "Vídeos de Animes",
+          "url": ""
         },
         "videos": [
           {
-            "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-            "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+            "titulo": "Super Dragon Ball Heroes Episódios 1 ao 17 Dublado",
+            "url": "https://www.youtube.com/watch?v=SVZRxfUktjA"
           },
           {
-            "titulo": "SEO com React",
-            "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+            "titulo": "Yu Yu Hakusho 062 de 112 - Dublagem Manchete Bloch",
+            "url": "https://www.youtube.com/watch?v=KjtBOMAhYfQ"
           },
           {
-            "titulo": "Componentização com VanillaJS #AluraMais",
-            "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+            "titulo": "A Batalha Final Naruto vs Sasuke - Naruto Shippuden",
+            "url": "https://www.youtube.com/watch?v=q1ZwRlQ83uo"
           },
           {
-            "titulo": "Pare de chutar e aprenda a display: inline #01",
-            "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+            "titulo": "A ORIGEM DOS MEDABOTS",
+            "url": "https://www.youtube.com/watch?v=hmAUybzO0Bk"
           },
           {
-            "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-            "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+            "titulo": "Saint Seiya: The Lost Canvas | A Saga de Hades | Episódio 23 A espada sagrada ( Dublado )",
+            "url": "https://www.youtube.com/watch?v=CIgqws2wZo0"
           },
           {
-            "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-            "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
+            "titulo": "digimon adventure 02 - The first appearance of Imperialdramon",
+            "url": "https://www.youtube.com/watch?v=H-l5pjySKIs"
           },
           {
-            "titulo": "Novidades do Angular v9",
-            "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+            "titulo": "Gohan vs Cell luta completa Dublado em Português",
+            "url": "https://www.youtube.com/watch?v=FlPc9FJs-ZA"
           },
           {
-            "titulo": "Base para aprender os frameworks",
-            "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+            "titulo": "Inuyasha - Episódio 20",
+            "url": "https://www.youtube.com/watch?v=kqcvX-BuMj4"
           }        
         ]
       },
       {
-        "titulo": "Back End",
+        "titulo": "Games",
         "cor": "#00C86F",
         "link_extra": {
-          "text": "Cursos de Back End na Alura",
-          "url": "https://www.alura.com.br/cursos-online-programacao"
+          "text": "Vídeos de Jogos (Gameplays e Notícias)",
+          "url": ""
         },
         "videos": [
           {
-            "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-            "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+            "titulo": "Castlevania: Dracula X - Cheesing The Minotaur!",
+            "url": "https://www.youtube.com/watch?v=NrnQ80NnpeM"
           },
           {
-            "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-            "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+            "titulo": "[+13] The First Moments Of: Streets Of Rage 4",
+            "url": "https://www.youtube.com/watch?v=jOqDDS3l6x8&t=302s"
           },
           {
-            "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-            "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+            "titulo": "LUIGI ENCONTRADO EM MARIO 64 APÓS 24 ANOS!",
+            "url": "https://www.youtube.com/watch?v=Vd8nT_Z_q1A&feature=emb_rel_end"
           },
           {
-            "titulo": "API: Dicionário do Programador",
-            "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
-          }, 
-          {
-            "titulo": "Usando Git Direito",
-            "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
-          }
-        ]
-      },
-      {
-        "titulo": "Data Science e Inteligência Artificial",
-        "cor": "#9cd33b",
-        "link_extra": {
-          "text": "Cursos de Data Science na Alura",
-          "url": "https://www.alura.com.br/formacao-data-science"
-        },
-        "videos": [
-          {
-            "titulo": "Teste de Turing",
-            "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+            "titulo": "RESIDENT EVIL 3 CLASSICO ATÉ ZERAR",
+            "url": "https://www.youtube.com/watch?v=zOsDsuE5dm4"
           },
           {
-            "titulo": "O que é Data Science?",
-            "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+            "titulo": "SNES Longplay [282] Mighty Morphin Power Rangers - The Movie (2P) (a)",
+            "url": "https://www.youtube.com/watch?v=xqHGwNnY040"
           },
           {
-            "titulo": "Melhor forma de aprender Python",
-            "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+            "titulo": "Mortal Kombat 11 All Friendships MK11 Friendship",
+            "url": "https://www.youtube.com/watch?v=HCMZf80HWxA"
           },
           {
-            "titulo": "Como ingressar no mercado de Data Science?",
-            "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+            "titulo": "Need for Speed - Most Wanted (Intro)",
+            "url": "https://www.youtube.com/watch?v=JdkZaxGD4tY"
           }
         ]
       },
       {
         "titulo": "Filmes",
         "cor": "orange",
-        "videos": [
-          {
-            "titulo": "Interestellar",
-            "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
-          },
-          {
-            "titulo": "Gattaca",
-            "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
-          },
-          {
-            "titulo": "A Chegada",
-            "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
-          },
-          {
-            "titulo": "Feitiço do Tempo",
-            "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
-          }
-        ]
-      },
-      {
-        "titulo": "Games",
-        "cor": "red",
         "link_extra": {
-          "text": "Formação de Jogos na Alura",
-          "url": "https://www.alura.com.br/formacao-jogos-unity"
+          "text": "Meus Filmes Favoritos",
+          "url": ""
         },
         "videos": [
           {
-            "titulo": "Final Fantasy 7",
-            "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+            "titulo": "O Exterminador do Futuro 2 - O Julgamento Final | Trailer Legendado",
+            "url": "https://www.youtube.com/watch?v=0yfpLhW-Xyg"
           },
           {
-            "titulo": "Assassins Creed Valhalla",
-            "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+            "titulo": "Capitão América 2: O Soldado Invernal - Trailer #2 Dublado (2014) HD",
+            "url": "https://www.youtube.com/watch?v=CTdvZwwShqM"
           },
           {
-            "titulo": "God of War 4",
-            "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+            "titulo": "Vingadores - Guerra Infinita | Trailer Oficial Legendado",
+            "url": "https://www.youtube.com/watch?v=t_ULBP6V9bg"
           },
           {
-            "titulo": "Resident Evil 8",
-            "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+            "titulo": "Velozes e Furiosos 8 - Trailer Oficial (Universal Pictures) HD",
+            "url": "https://www.youtube.com/watch?v=KvSlvtPnZTo"
           },
           {
-            "titulo": "Pokémon Let's Go Pikachu/Eevee",
-            "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
+            "titulo": "Rocky Balboa - Motivação",
+            "url": "https://www.youtube.com/watch?v=r-sdYXK0tgc"
           }
         ]
       },
@@ -178,6 +138,36 @@
           {
             "titulo": "Como aprender a programar?",
             "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+          }
+        ]
+      },
+      {
+        "titulo": "Desenvolvimento de Jogos",
+        "cor": "#6E6E6E",
+        "link_extra": {
+          "text": "Vídeo-aulas sobre desenvolvimento de jogos",
+          "url": ""
+        },
+        "videos": [
+          {
+            "titulo": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+            "url": "https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLostGeGEJEpWCPBExmCFg-M3Hmc87L67J&index=12&t=12s"
+          },
+          {
+            "titulo": "Movimento do Jogoador | Como criar jogos com Unity EP 01",
+            "url": "https://www.youtube.com/watch?v=kXiImu6jCk4&list=PLostGeGEJEpWCPBExmCFg-M3Hmc87L67J&index=28&t=0s"
+          },
+          {
+            "titulo": "CRIANDO JOGOS FAMOSOS DO ATARI //EP #2 (LIVESTREAM)",
+            "url": "https://www.youtube.com/watch?v=_cKV2n7AQRQ&list=PLostGeGEJEpWCPBExmCFg-M3Hmc87L67J&index=27&t=0s"
+          },
+          {
+            "titulo": "CRIANDO UM JOGO 2D DE PLATAFORMA NA UNITY | AULA 01",
+            "url": "https://www.youtube.com/watch?v=Vt7VtkWb3R4&list=PLostGeGEJEpWCPBExmCFg-M3Hmc87L67J&index=17&t=0s"
+          },
+          {
+            "titulo": "Criando um Snake do Zero com PyGame em 5 Minutos (ou mais)",
+            "url": "https://www.youtube.com/watch?v=H4TXHI9BRCQ"
           }
         ]
       }
