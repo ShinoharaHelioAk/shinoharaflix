@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import PageDefault from '../../../components/PageDefault';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
+import Button from '../../../components/Button';
 
 function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
@@ -25,7 +26,7 @@ function CadastroCategoria() {
     setValues({
       ...values,
       [chave]: valor,
-    })
+    });
   }
 
   function handleChange(infosDoEvento) {
@@ -34,15 +35,48 @@ function CadastroCategoria() {
     //setNomeDaCategoria(infosDoEvento.target.value);
     //setValue('nome', infosDoEvento.target.value);
     
-    //setValue(infosDoEvento.target.getAttribute('name'), infosDoEvento.target.value);
+    setValue(infosDoEvento.target.getAttribute('name'), infosDoEvento.target.value);
     
     //As duas linhas abaixo estão dando erro ao tentar digitar nos campos de texto, não entendi o porque.
     /*const {getAttribute, value} = infosDoEvento.target;
     setValue(getAttribute('name'), value);*/
     //As duas linhas abaixo resolveram o problema das duas linhas acima.
-    const {name, value} = infosDoEvento.target;
-    setValue(name, value);
+    /* const {name, value} = infosDoEvento.target;
+    setValue(name, value); */
   }
+
+  useEffect(() => {
+    //console.log('alo alo w brasil');
+    if (window.location.href.includes('localhost')) {
+      const URL_TOP = 'http://localhost:8080/categorias';
+      //fetch(URL_TOP);
+      fetch(URL_TOP).then(async (respostaDoServidor) => {
+          const resposta = await respostaDoServidor.json();
+          setCategorias([...resposta,]);
+      });
+
+    }
+    /* setTimeout(() => {
+      setCategorias([
+        // ...categorias, nomeDaCategoria
+        ...categorias,
+        //values
+        {
+          id: 1,
+          nome: 'Front End',
+          descricao: 'Uma categoria bacanudassa',
+          cor: '#cbd1ff',
+        },
+        {
+          id: 2,
+          nome: 'Back End',
+          descricao: 'Uma categoria bacanudassa',
+          cor: '#cbd1ff',
+        },
+      ]);
+    }, 4 * 1000) */;
+  }, []
+  );
 
   return (
     <PageDefault>
@@ -89,7 +123,7 @@ function CadastroCategoria() {
 
         <FormField
           label="Descrição"
-          type="comment"
+          type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
@@ -137,20 +171,40 @@ function CadastroCategoria() {
             />
           </label>
         </div>*/}
-        <button>
+        {/* <button>
           Cadastrar
-        </button>
+        </button> */}
+        <Button>
+          Cadastrar
+        </Button>
       </form>
 
-        <ul>
-          {categorias.map((categoria, indice) => {
-            return (
-            <li key={`${categoria}${indice}`}>
-              {categoria.nome}
-            </li>
-            )
-          })}
-        </ul>
+      {/* <div>Carregando...</div> */}
+      {categorias.length === 0 && (
+        <div>
+          Carregando...
+        </div>
+      )}
+
+      <ul>
+        {/* {categorias.map((categoria, indice) => {
+          return (
+          <li key={`${categoria}${indice}`}>
+            {categoria.nome}
+          </li>
+          )
+        })} */}
+        {categorias.map((categoria) => {
+          // <li key={`${categoria.nome}`}>
+          //   {categoria.nome}
+          // </li>
+          return (
+          <li key={`${categoria.indice}`}>
+          {categoria.nome}
+        </li>
+          )
+        })}
+      </ul>
 
       <Link to="/">
         Ir para a Home

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function ButtonLink() {
     //props => {className: "o que alguém passar", href: "/"}
