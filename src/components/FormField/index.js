@@ -62,24 +62,34 @@ const Input = styled.input`
     transform: scale(.6) translateY(-10px);
   } */
 
-  &:focus:not([type='color']) + span {
+  /* &:focus:not([type='color']) + span {
     transform: scale(.6) translateY(-10px);
-  }
+  } */
 
   /* Tag de template string */
   /* Lambda / Arrow Function */
-  ${({ hasValue }) => hasValue && css`
+  /* O bloco comentado abaixo não está funcionando. */
+  /* ${({ hasValue }) => hasValue && css`
       &::not([type="color"]) + span {
     transform: scale(.6) translateY(-10px);
-  }`}
+  }`} */
+  ${({ value }) => {
+    const hasValue = value.length > 0;
+    return hasValue && css`
+      &:not([type='color']) + ${Label.Text} {
+        transform: scale(.6) translateY(-10px);
+      }
+    `;
+  }}
 `;
 
-function FormField({ label, type, name, value, onChange }) {
+function FormField({ label, type, name, value, onChange, suggestions, }) {
   const fieldId = `id_${name}`;
   const isTextarea = type === "textarea";
   const tag = isTextarea ? "textarea": "input";
 
   const hasValue = Boolean(value.length);
+  const hasSuggestions = Boolean(suggestions.length);
 
   //console.log(type);
 
@@ -98,10 +108,28 @@ function FormField({ label, type, name, value, onChange }) {
           value={value}
           hasValue={hasValue}
           onChange={onChange}
+          autoComplete={hasSuggestions ? 'off' : 'on'}
+          list={hasSuggestions ? `suggestionFor_${fieldId}` : undefined}
           />
           <Label.Text>
             {label}: 
           </Label.Text>
+          {
+            hasSuggestions && (
+              <datalist id={`suggestionFor_${fieldId}`}>
+              {
+                suggestions.map((suggestion) => {
+                  return (
+                    <option value={suggestion} key={`suggestionFor_${fieldId}_option${suggestion}`}>
+                      {suggestion}
+                    </option>
+                  );
+                })
+              }
+            </datalist>
+            )
+          }
+          
       {/* </label> */}
       </Label>
     {/* </div> */}
@@ -113,6 +141,7 @@ FormField.defaultProps = {
   type: 'text',
   value: '',
   onChange: () => {},
+  suggestions: [],
 };
 
 FormField.propTypes = {
@@ -121,6 +150,7 @@ FormField.propTypes = {
   name: PropTypes.string.isRequired,
   value: PropTypes.string,
   onChange: PropTypes.func.isRequired,
+  suggestions: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default FormField;

@@ -2,15 +2,230 @@
   "categorias": [
     {
       "id": 1,
-      "nome": "Front End",
-      "descricao": "Uma categoria bacanudassa",
-      "cor": "$cbd1ff"
+      "titulo": "Animes",
+      "cor": "#FE2E2E",
+      "link_extra": {
+        "text": "Vídeos de Animes",
+        "url": ""
+      }
     },
     {
       "id": 2,
-      "nome": "Back End",
-      "descricao": "Uma categoria bacanudassa",
-      "cor": "$cbd1ff"
+      "titulo": "Games",
+      "cor": "#00C86F",
+      "link_extra": {
+        "text": "Vídeos de Jogos (Gameplays e Notícias)",
+        "url": ""
+      }
+    },
+    {
+      "id": 3,
+      "titulo": "Filmes",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Meus Filmes Favoritos",
+        "url": ""
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Aprendendo a aprender tecnologia",
+      "cor": "#6b5be2",
+      "link_extra": {
+        "text": "Curso sobre aprendizado na Alura",
+        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Desenvolvimento de Jogos",
+      "cor": "#6E6E6E",
+      "link_extra": {
+        "text": "Vídeo-aulas sobre desenvolvimento de jogos",
+        "url": ""
+      }
+    }
+  ],
+  "videos": [
+    {
+      "id": 1,
+      "categoriaId": 1,
+      "titulo": "Super Dragon Ball Heroes Episódios 1 ao 17 Dublado",
+      "url": "https://www.youtube.com/watch?v=SVZRxfUktjA"
+    },
+    {
+      "id": 2,
+      "categoriaId": 1,
+      "titulo": "Yu Yu Hakusho 062 de 112 - Dublagem Manchete Bloch",
+      "url": "https://www.youtube.com/watch?v=KjtBOMAhYfQ"
+    },
+    {
+      "id": 3,
+      "categoriaId": 1,
+      "titulo": "A Batalha Final Naruto vs Sasuke - Naruto Shippuden",
+      "url": "https://www.youtube.com/watch?v=q1ZwRlQ83uo"
+    },
+    {
+      "id": 4,
+      "categoriaId": 1,
+      "titulo": "A ORIGEM DOS MEDABOTS",
+      "url": "https://www.youtube.com/watch?v=hmAUybzO0Bk"
+    },
+    {
+      "id": 5,
+      "categoriaId": 1,
+      "titulo": "Saint Seiya: The Lost Canvas | A Saga de Hades | Episódio 23 A espada sagrada ( Dublado )",
+      "url": "https://www.youtube.com/watch?v=CIgqws2wZo0"
+    },
+    {
+      "id": 6,
+      "categoriaId": 1,
+      "titulo": "digimon adventure 02 - The first appearance of Imperialdramon",
+      "url": "https://www.youtube.com/watch?v=H-l5pjySKIs"
+    },
+    {
+      "id": 7,
+      "categoriaId": 1,
+      "titulo": "Gohan vs Cell luta completa Dublado em Português",
+      "url": "https://www.youtube.com/watch?v=FlPc9FJs-ZA"
+    },
+    {
+      "id": 8,
+      "categoriaId": 1,
+      "titulo": "Inuyasha - Episódio 20",
+      "url": "https://www.youtube.com/watch?v=kqcvX-BuMj4"
+    },
+    {
+      "id": 9,
+      "categoriaId": 2,
+      "titulo": "Castlevania: Dracula X - Cheesing The Minotaur!",
+      "url": "https://www.youtube.com/watch?v=NrnQ80NnpeM"
+    },
+    {
+      "id": 10,
+      "categoriaId": 2,
+      "titulo": "[+13] The First Moments Of: Streets Of Rage 4",
+      "url": "https://www.youtube.com/watch?v=jOqDDS3l6x8&t=302s"
+    },
+    {
+      "id": 11,
+      "categoriaId": 2,
+      "titulo": "LUIGI ENCONTRADO EM MARIO 64 APÓS 24 ANOS!",
+      "url": "https://www.youtube.com/watch?v=Vd8nT_Z_q1A&feature=emb_rel_end"
+    },
+    {
+      "id": 12,
+      "categoriaId": 2,
+      "titulo": "RESIDENT EVIL 3 CLASSICO ATÉ ZERAR",
+      "url": "https://www.youtube.com/watch?v=zOsDsuE5dm4"
+    },
+    {
+      "id": 13,
+      "categoriaId": 2,
+      "titulo": "SNES Longplay [282] Mighty Morphin Power Rangers - The Movie (2P) (a)",
+      "url": "https://www.youtube.com/watch?v=xqHGwNnY040"
+    },
+    {
+      "id": 14,
+      "categoriaId": 2,
+      "titulo": "Mortal Kombat 11 All Friendships MK11 Friendship",
+      "url": "https://www.youtube.com/watch?v=HCMZf80HWxA"
+    },
+    {
+      "id": 15,
+      "categoriaId": 2,
+      "titulo": "Need for Speed - Most Wanted (Intro)",
+      "url": "https://www.youtube.com/watch?v=JdkZaxGD4tY"
+    },
+    {
+      "id": 16,
+      "categoriaId": 3,
+      "titulo": "O Exterminador do Futuro 2 - O Julgamento Final | Trailer Legendado",
+      "url": "https://www.youtube.com/watch?v=0yfpLhW-Xyg"
+    },
+    {
+      "id": 17,
+      "categoriaId": 3,
+      "titulo": "Capitão América 2: O Soldado Invernal - Trailer #2 Dublado (2014) HD",
+      "url": "https://www.youtube.com/watch?v=CTdvZwwShqM"
+    },
+    {
+      "id": 18,
+      "categoriaId": 3,
+      "titulo": "Vingadores - Guerra Infinita | Trailer Oficial Legendado",
+      "url": "https://www.youtube.com/watch?v=t_ULBP6V9bg"
+    },
+    {
+      "id": 19,
+      "categoriaId": 3,
+      "titulo": "Velozes e Furiosos 8 - Trailer Oficial (Universal Pictures) HD",
+      "url": "https://www.youtube.com/watch?v=KvSlvtPnZTo"
+    },
+    {
+      "id": 20,
+      "categoriaId": 3,
+      "titulo": "Rocky Balboa - Motivação",
+      "url": "https://www.youtube.com/watch?v=r-sdYXK0tgc"
+    },
+    {
+      "id": 21,
+      "categoriaId": 4,
+      "titulo": "Como estudar melhor?",
+      "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
+    },
+    {
+      "id": 22,
+      "categoriaId": 4,
+      "titulo": "Faculdade",
+      "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
+    },
+    {
+      "id": 23,
+      "categoriaId": 4,
+      "titulo": "Frameworks",
+      "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
+    },
+    {
+      "id": 24,
+      "categoriaId": 4,
+      "titulo": "A mágica do Aprendizado",
+      "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
+    },
+    {
+      "id": 25,
+      "categoriaId": 4,
+      "titulo": "Como aprender a programar?",
+      "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
+    },
+    {
+      "id": 26,
+      "categoriaId": 5,
+      "titulo": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c&list=PLostGeGEJEpWCPBExmCFg-M3Hmc87L67J&index=12&t=12s"
+    },
+    {
+      "id": 27,
+      "categoriaId": 5,
+      "titulo": "Movimento do Jogoador | Como criar jogos com Unity EP 01",
+      "url": "https://www.youtube.com/watch?v=kXiImu6jCk4&list=PLostGeGEJEpWCPBExmCFg-M3Hmc87L67J&index=28&t=0s"
+    },
+    {
+      "id": 28,
+      "categoriaId": 5,
+      "titulo": "CRIANDO JOGOS FAMOSOS DO ATARI //EP #2 (LIVESTREAM)",
+      "url": "https://www.youtube.com/watch?v=_cKV2n7AQRQ&list=PLostGeGEJEpWCPBExmCFg-M3Hmc87L67J&index=27&t=0s"
+    },
+    {
+      "id": 29,
+      "categoriaId": 5,
+      "titulo": "CRIANDO UM JOGO 2D DE PLATAFORMA NA UNITY | AULA 01",
+      "url": "https://www.youtube.com/watch?v=Vt7VtkWb3R4&list=PLostGeGEJEpWCPBExmCFg-M3Hmc87L67J&index=17&t=0s"
+    },
+    {
+      "id": 30,
+      "categoriaId": 5,
+      "titulo": "Criando um Snake do Zero com PyGame em 5 Minutos (ou mais)",
+      "url": "https://www.youtube.com/watch?v=H4TXHI9BRCQ"
     }
   ]
 }

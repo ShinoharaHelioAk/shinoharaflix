@@ -3,8 +3,16 @@ import PageDefault from '../../../components/PageDefault';
 import { Link } from 'react-router-dom';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import useForm from '../../../hooks/useForm';
+
+const valoresIniciais = {
+  titulo: '',
+  descricao: '',
+  cor: '',
+}
 
 function CadastroCategoria() {
+  const { handleChange, values, clearForm } = useForm(valoresIniciais);
   const [categorias, setCategorias] = useState([]);
   
   /* const valoresIniciais = {
@@ -12,43 +20,24 @@ function CadastroCategoria() {
     descricao: 'Descrição inicial',
     cor: '#000000',
   } */
-  const valoresIniciais = {
+  /* const valoresIniciais = {
     nome: '',
     descricao: '',
     cor: '',
-  }
-  const [values, setValues] = useState(valoresIniciais);
+  } */
+  
   
   //const [nomeDaCategoria, setNomeDaCategoria] = useState('Valor Inicial');
-
-  // chave: pode ser nome, descricao, etc.
-  function setValue(chave, valor) {
-    setValues({
-      ...values,
-      [chave]: valor,
-    });
-  }
-
-  function handleChange(infosDoEvento) {
-    //console.log('[nomeDaCategoria]', nomeDaCategoria);
-    //console.log('[infosDoEvento.target.value]', infosDoEvento.target.value);
-    //setNomeDaCategoria(infosDoEvento.target.value);
-    //setValue('nome', infosDoEvento.target.value);
-    
-    setValue(infosDoEvento.target.getAttribute('name'), infosDoEvento.target.value);
-    
-    //As duas linhas abaixo estão dando erro ao tentar digitar nos campos de texto, não entendi o porque.
-    /*const {getAttribute, value} = infosDoEvento.target;
-    setValue(getAttribute('name'), value);*/
-    //As duas linhas abaixo resolveram o problema das duas linhas acima.
-    /* const {name, value} = infosDoEvento.target;
-    setValue(name, value); */
-  }
 
   useEffect(() => {
     //console.log('alo alo w brasil');
     if (window.location.href.includes('localhost')) {
-      const URL_TOP = 'http://localhost:8080/categorias';
+      //const URL_TOP = 'http://localhost:8080/categorias';
+      //const URL_TOP = 'https://shinoharaflix.herokuapp.com/categorias';
+      const URL_TOP = window.location.hostname.includes(
+        'localhost') ?
+        'http://localhost:8080/categorias' : 'https://shinoharaflix.herokuapp.com/categorias';
+
       //fetch(URL_TOP);
       fetch(URL_TOP).then(async (respostaDoServidor) => {
           const resposta = await respostaDoServidor.json();
@@ -81,7 +70,8 @@ function CadastroCategoria() {
   return (
     <PageDefault>
       {/* <h1>Cadastro de Categoria: {nomeDaCategoria}</h1> */}
-      <h1>Cadastro de Categoria: {values.nome}</h1>
+      {/* <h1>Cadastro de Categoria: {values.nome}</h1> */}
+      <h1>Cadastro de Categoria: {values.titulo}</h1>
 
       <form onSubmit={function handleSubmit(infosDoEvento) {
         infosDoEvento.preventDefault();
@@ -92,7 +82,8 @@ function CadastroCategoria() {
         ]);
 
         //setValues({});
-        setValues(valoresIniciais);
+        //setValues(valoresIniciais);
+        clearForm();
       }}>
         {/* State */}
         {/*<div>
@@ -116,8 +107,11 @@ function CadastroCategoria() {
         <FormField
           label="Nome da Categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          //name="nome"
+          name="titulo"
+          
+          //value={values.nome}
+          value={values.titulo}
           onChange={handleChange}
         />
 
@@ -199,8 +193,8 @@ function CadastroCategoria() {
           //   {categoria.nome}
           // </li>
           return (
-          <li key={`${categoria.indice}`}>
-          {categoria.nome}
+          <li key={`${categoria.titulo}`}>
+          {categoria.titulo}
         </li>
           )
         })}
