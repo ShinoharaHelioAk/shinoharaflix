@@ -46,6 +46,9 @@ function CadastroVideo() {
           url: values.url,
           categoriaId: categoriaEscolhida.id,
         }).then(() => {
+          console.log('values.titulo', values.titulo);
+          console.log('values.url', values.url);
+          console.log('categoriaEscolhida.id', categoriaEscolhida.id);
           console.log('Cadastrou com sucesso!');
           history.push('/');
         });
